@@ -10,15 +10,30 @@ public class lc {
 
     public static void main (String[] args) throws FileNotFoundException {
 
-        int n = 10;
-        int [] cost = {6,3,4,2};
-        int[] quantities = {30,14,16,9};
-
-        System.out.println(budgetShopping(n, quantities, cost));
-
-
+//        int n = 10;
+//        int [] cost = {6,3,4,2};
+//        int[] quantities = {30,14,16,9};
+//
+//        System.out.println(budgetShopping(n, quantities, cost));
 
 
+        int n1 = 2;
+        int n2 = 3;
+
+        lc obj =  new lc();
+        obj.multiply(n1, n2);
+
+    }
+
+    private void multiply(int n1, int n2) {
+        int n = 0;
+        int sum = 0;
+        while (n < n2) {
+            sum += n1;
+            n++;
+        }
+
+        System.out.println(sum);
     }
 
     private static int budgetShopping(int n, int[] bundleQuantities, int[] bundleCosts) {
