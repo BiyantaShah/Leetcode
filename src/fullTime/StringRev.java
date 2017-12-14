@@ -69,4 +69,27 @@ public class StringRev {
 
         System.out.println(finalRes);
     }
+
+
+    /*
+    Using linked list
+
+    String s = "blue";
+
+    ListNode check = new ListNode(s.charAt(0));
+
+    for (int i =1; i < s.length(); i++) {
+
+        ListNode thisNode = new ListNode(s.charAt(i));
+        thisNode.next = check;
+        check = thisNode;
+    }
+    StringBuilder str = new StringBuilder();
+    while (check != null){
+        str.append((char)check.val);
+        check = check.next;
+    }
+
+    System.out.println(str.toString()); //eulb
+     */
 }

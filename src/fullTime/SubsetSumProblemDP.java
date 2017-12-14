@@ -11,7 +11,7 @@ public class SubsetSumProblemDP {
     public static void main (String[] args) {
         int[] arr = {3, 34, 4, 12, 5, 2};
 
-        int target = 4;
+        int target = 13;
 
         checkIfSubset(arr, target);
     }
